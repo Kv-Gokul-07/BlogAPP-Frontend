@@ -1,0 +1,111 @@
+.custom_container {
+  background-color: #a0deffd4;
+  background: no-repeat center url("../../../public/assets/BG.png");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form-content {
+    width: 500px;
+    height: auto;
+    padding-bottom: 2rem;
+    border-radius: 1.875rem;
+    background-color: #ffffff;
+    .form_header {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .header_content {
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem 0rem;
+          .icon {
+            padding-right: 0.625rem;
+            display: flex;
+            align-items: center;
+            color: #000000c7;
+          }
+          a {
+            text-decoration: none;
+          }
+          h1 {
+            font-size: 1.875rem;
+            font-weight: 400;
+            color: #000000c7;
+          }
+        }
+        &.signin_header {
+          background-color: #f4f4f4;
+          border-top-left-radius: 1.875rem;
+          > div {
+            background-color: #ffffff;
+            border-top-right-radius: 1.875rem;
+            border-top-left-radius: 1.875rem;
+          }
+        }
+        &.register_header {
+          background-color: #f4f4f4;
+          border-bottom-left-radius: 1.875rem;
+          border-top-right-radius: 1.875rem;
+          h1,
+          .icon {
+            color: #000000a5;
+          }
+        }
+      }
+    }
+    .avatar {
+      text-align: center;
+      margin: 5vh 0px;
+      span {
+        background-color: #f4f4f4;
+        border-radius: 1.25rem;
+        svg {
+          fill: #000000a5;
+        }
+      }
+    }
+    .form_field {
+        padding: 0px 1.875rem;
+        .FormInput {
+            margin-bottom: 1.25rem;
+        }
+    }
+  }
+
+  &.register_container {
+    .form-content {
+      .form_header {
+        .signin_header {
+          background-color: #f4f4f4;
+          border-bottom-right-radius: 1.875rem;
+          >div {
+            background-color: #f4f4f4;
+            border-bottom-right-radius: 1.875rem;
+          }
+        }
+        .register_header {
+          background-color: #f4f4f4;
+          border-top-right-radius: 1.875rem;
+          > div {
+            background-color: #ffffff;
+            border-top-right-radius: 1.875rem;
+            border-top-left-radius: 1.875rem;
+          }
+        }
+      }
+    }
+  }
+
+  .btn_submit {
+    margin-top: 2rem;
+  }
+}
+
+.icon_large {
+  font-size: 2rem;
+}

@@ -1,0 +1,37 @@
+.FormInput {
+    >.ant-input-affix-wrapper {
+        background-color: #f4f4f4;
+        border-radius: 1.875rem;
+        border: 0px;
+        .ant-input-prefix {
+            margin-inline-end: 10px;
+            span {
+                font-size: 1.5rem;
+            }
+        }
+        input {
+            background-color: #f4f4f4;
+            font-size: 1.25rem;
+        }
+        &.ant-input-affix-wrapper-focused {
+            border-inline-end-width: 0px;
+            box-shadow: unset;
+        }
+    }
+    >.ant-input {
+        background-color: #f4f4f4;
+        border: 0px;
+        font-size: 1.25rem; 
+        &:hover {
+            border-color: #d9d9d9;
+            border: 0px;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0px rgb(255, 255, 255);
+        }
+    }
+    .error-field {
+        padding: 0.5rem 0rem 0rem 1rem;
+        color: rgb(202, 86, 86);
+    }
+}
